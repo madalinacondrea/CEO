@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@200;300;400;500&family=Roboto:wght@300;400&family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,600,1,0"
+    />
+    <link rel="stylesheet" href="register_style.css" />
+    <title>Programează-te</title>
+  </head>
+  <body id="bg">
+    <!-- MENU START -->
+    <div class="menu">
+      <nav class="navbar">
+        <a href="index.html">
+          <div class="logo">
+            <h4>CEO</h4>
+            
+          </div>
+        </a>
+        <div class="links">
+          <a href="features.html" class="menu-link">Specialiști</a>
+          <a href="reviews.html" class="menu-link">Servicii</a>
+          <a href="log_in.html" class="menu-link">Aflați prețurile</a>
+          <a href="register.html" class="border-btn menu-btn">Programează-te</a>
+        </div>
+      </nav>
+    </div>
+    <!-- MENU END -->
+
+    <div class="container">
+      <h1 id="title" class="title">Programare</h1>
+      <div id="access" class="access">
+        <div class="parameter">
+          <label>Prenume</label>
+          <input
+            type="text"
+            id="name"
+            class="long"
+            value=""
+            placeholder="Maria"
+          />
+        </div>
+        <div class="parameter">
+          <label>Nume</label>
+          <input
+            type="text"
+            id="surname"
+            class="long"
+            value=""
+            placeholder="Suhan"
+          />
+        </div>
+        <div class="par-data">
+          <label class="second-title">Anul nașterii</label>
+          <label>Zi</label>
+          <label>Lună</label>
+          <label>An</label>
+          <input
+            type="text"
+            id="day"
+            class="short"
+            maxlength="2"
+            value=""
+            placeholder="01"
+          />
+          <input
+            type="text"
+            id="month"
+            class="short"
+            maxlength="2"
+            value=""
+            placeholder="01"
+          />
+          <input
+            type="text"
+            id="year"
+            class="short"
+            maxlength="4"
+            value=""
+            placeholder="2000"
+          />
+        </div>
+        <div class="parameter">
+          <label>Problema care necesită tratament</label>
+          <input
+            id="email"
+            type="text"
+            placeholder="Carii"
+            class="long"
+            value=""
+          />
+        </div>
+        <div class="parameter">
+          <label>Număr de telefon</label>
+          <div class="inner-input">
+            <input
+              id="psw"
+              class="long"
+              type="password"
+              onfocus="put_color(id)"
+              onfocusout="remove_color(id)"
+            />
+            <span
+              id="eye"
+              class="material-symbols-outlined icon-v"
+              onclick="view_psw()"
+            >
+              visibility_off
+            </span>
+          </div>
+        </div>
+        <div class="dip_btn">
+          <button class="btn" onclick="check()">Programare</button>
+          <button class="btn" onclick="reset()">Resetează</button>
+        </div>
+      </div>
+    </div>
+    <script src="register.js"></script>
+  </body>
+</html>

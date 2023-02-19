@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@200;300;400;500&family=Roboto:wght@300;400&family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,600,1,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="stylesheet" href="log_style.css" />
+    <title>Aflați prețurile</title>
+  </head>
+  <body id="bg">
+    <!-- MENU START -->
+    <div class="menu">
+      <nav class="navbar">
+        <a href="index.html">
+          <div class="logo">
+            <h4>CEO</h4>
+            </div>
+        </a>
+        <div class="links">
+          <a href="features.html" class="menu-link">Specialiști</a>
+          <a href="reviews.html" class="menu-link">Servicii</a>
+          <a href="log_in.html" class="menu-link">Aflați prețurile</a>
+          <a href="register.html" class="border-btn menu-btn">Programează-te</a>
+        </div>
+      </nav>
+    </div>
+    <!-- MENU END -->
+
+    <div class="container">
+      <div id="message" class="message hidden">
+        <h2>Verifică adresa de email pentru informații ! 🥳</h2>
+      </div>
+      <div class="fields">
+        <span class="material-symbols-outlined angle icon-v" onclick="reset()">
+          restart_alt
+        </span>
+        <div class="input-mail">
+          <label class="title">Email</label>
+          <input
+            id="email"
+            class="input"
+            type="text"
+            placeholder="mariasuhan@email.com"
+            onfocus="put_color(id)"
+            onfocusout="remove_color(id)"
+          />
+        </div>
+        <div class="input-psw">
+          <label class="title">Parolă</label>
+          <div class="inner-input">
+            <input
+              id="psw"
+              class="input"
+              type="password"
+              onfocus="put_color(id)"
+              onfocusout="remove_color(id)"
+            />
+            <span
+              id="eye"
+              class="material-symbols-outlined icon-v"
+              onclick="view_psw()"
+            >
+              visibility_off
+            </span>
+          </div>
+          <a class="link" href="#">Am uitat parola🙁</a>
+        </div>
+        <div>
+          <input
+            onclick="login()"
+            class="log-btn"
+            type="button"
+            value="Log In"
+          />
+        </div>
+      </div>
+    </div>
+    <script src="log.js"></script>
+  </body>
+</html>
